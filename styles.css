@@ -298,9 +298,9 @@ footer a {
 }
 
 .media-content iframe {
-    width: calc(100% - 2 * var(--main-padding)); /* 宽度为距离左右20px */
-    margin-left: var(--main-padding);
-    height: 100%;
+    width: 100%; /* 宽度为距离左右20px */
+    height:900px;
+
 }
 
 .media-content video {

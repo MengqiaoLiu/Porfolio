@@ -297,6 +297,11 @@ footer a {
     margin: 0 var(--main-padding);
 }
 
+.media-content iframe {
+    width: calc(100% - 2 * var(--main-padding)); /* 宽度为距离左右20px */
+    margin-left: var(--main-padding);
+}
+
 .media-content video {
     width: 100%; /* 宽度为距离左右20px */
 }

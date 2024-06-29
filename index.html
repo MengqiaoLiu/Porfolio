@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengqiao Liu - Art Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="icon.png"> <!-- 添加这行 -->
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1><a href="index.html"><span id="me">Me</span>ngqiao</a></h1>
+        </div>
+        <nav>
+            <ul>
+                
+                <li class="info"><a href="info.html">Info</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="bio">
+            <p>Mengqiao Liu is an interaction designer and new media artist, blending creativity with precision to craft engaging digital experiences. Currently pursuing a Master's Degree in New Media at Aalto University, she dedicates herself to user-centric design, thrives in collaborative environments, and is committed to pushing the boundaries of innovation.</p>
+        </section>
+        <section class="filter">
+            <label for="filter">I want to know projects about </label>
+            <div class="filter-options">
+                <label>
+                    <input type="radio" name="filter" value="all" checked>
+                    <span class="circle"></span>All
+                </label>
+                <label>
+                    <input type="checkbox" name="filter" value="ux-ui">
+                    <span class="circle"></span>UX/UI Design
+                </label>
+                <label>
+                    <input type="checkbox" name="filter" value="interactive-art">
+                    <span class="circle"></span>Interactive Art
+                </label>
+                <label>
+                    <input type="checkbox" name="filter" value="reseach">
+                    <span class="circle"></span>Reseach
+                </label>
+                <label>
+                    <input type="checkbox" name="filter" value="business">
+                    <span class="circle"></span>Business
+                </label>
+                <label>
+                    <input type="checkbox" name="filter" value="self-work">
+                    <span class="circle"></span>Self Work
+                </label>
+            </div>
+        </section>
+        <section class="artworks">
+            <div class="art-item" data-tags="interactive-art,self-work" data-link="p10/You might like...（猜你喜欢).html" >
+                <img src="cover/You might like...(猜你喜欢).png" alt="You might like...(猜你喜欢)">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">You might like...(猜你喜欢)</span>
+                    <span class="right">2023</span>
+                </h3>
+                <p>#Interactive Art</p>
+                <p>#Data Privacy & AI generate</p>
+            </div>
+            <div class="art-item" data-tags="interactive-art,self-work" data-link="p9/SurFace.html">
+                <img src="cover/SurFace.png" alt="SurFace">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">SurFace</span>
+                    <span class="right">2024</span>
+                </h3>
+                <p>#Interactive Art</p>
+                <p>#Identity & data extraction</p>
+            </div>
+            <div class="art-item" data-tags="interactive-art,self-work" data-link="p8/Minds-On.html">
+                <img src="cover/Minds-On.png" alt="Minds-On">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Minds-On</span>
+                    <span class="right">2023</span>
+                </h3>
+                <p>#Interactive Art</p>
+                <p>#Game & Spatial Perception</p>
+            </div>
+            <div class="art-item" data-tags="ux-ui,business" data-link="p7/Kwai recruitment business payment function.html">
+                <img src="cover/Payment function of Kwai Job Board.png" alt="You might like...">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Kwai recruitment business payment function</span>
+                    <span class="right">2023</span>
+                </h3>
+                <p>#UX</p>
+                <p>#App & Web & Software</p>
+            </div>
+            <div class="art-item" data-tags="ux-ui,business" data-link="p6/Kwai Spring Festival blind date.html">
+                <img src="cover/Kwai Spring Festival blind date.png" alt="You might like...">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Kwai Spring Festival blind date</span>
+                    <span class="right">2022</span>
+                </h3>
+                <p>#UX</p>
+                <p>#App</p>
+            </div>
+            <div class="art-item" data-tags="ux-ui,self-work,reseach" data-link="p5/Research on motions.html">
+                <img src="cover/Research on motions.png" alt="You might like...">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Research on motions</span>
+                    <span class="right">2024</span>
+                </h3>
+                <p>#11</p>
+                <p>#2</p>
+            </div>
+            <div class="art-item" data-tags="interactive-art,self-work" data-link="p4/Behind the Mirror.html">
+                <img src="cover/Behind the Mirror.png" alt="You might like...">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Behind the Mirror</span>
+                    <span class="right">2020</span>
+                </h3>
+                <p>#Interactive Art</p>
+                <p>#Social Dilemma & Three-Way Handshake</p>
+            </div>
+            <div class="art-item" data-tags="interactive-art,self-work" data-link="p3/SHADOW.html">
+                <img src="cover/SHADOW.png" alt="You might like...">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">SHADOW</span>
+                    <span class="right">2020</span>
+                </h3>
+                <p>#Interactive Art</p>
+                <p>#Child sexual abuse</p>
+            </div>
+            <!-- Add more artwork items here as needed -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy;Design and developed by Mengqiao Liu @2024</p>
+    </footer>
+    <script defer src="scripts.js"></script>
+
+</body>
+</html>
+
+

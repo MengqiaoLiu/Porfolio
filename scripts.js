@@ -97,4 +97,13 @@ document.addEventListener("DOMContentLoaded", function() {
         hoverVideo.style.display = 'block';
         hoverVideo.style.left = `${e.clientX - hoverVideo.offsetWidth / 2}px`;
         hoverVideo.style.top = `${e.clientY - hoverVideo.offsetHeight / 2}px`;
-        if (!iframe.src.includes
+        if (!iframe.src.includes("autoplay=1")) {
+            iframe.src = videoSrc + "&autoplay=1";
+        }
+    });
+
+    hoverVideoContainer.addEventListener('mouseleave', function() {
+        hoverVideo.style.display = 'none';
+        iframe.src = videoSrc; // Reset the video source to stop the video
+    });
+});

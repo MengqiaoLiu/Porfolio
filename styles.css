@@ -353,4 +353,153 @@ footer a {
 }
 
 @media (max-width: 600px) {
-    .image-gallery
+    .image-gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* 基本链接样式 */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Hover 状态下的链接样式 */
+a:hover {
+    color: var(--me-color); /* 使用自定义属性来设置颜色 */
+}
+
+.nav-arrow:hover,
+nav ul li a:hover,
+header .logo h1 a:hover,
+.image-item img:hover {
+    color: var(--me-color);
+}
+
+
+/* 新增的媒体描述部分样式 */
+.media-description {
+    padding: 0 var(--main-padding);
+    margin-left: 0; /* 设置左边距 */
+    text-align: left; /* 设置左对齐 */
+    margin-bottom: 2rem; /* 添加下边距以与图片分开 */
+}
+
+.media-description h3 {
+    font-size: 14px; /* 设置标题字体大小 */
+}
+
+.media-description p {
+    font-size: 14px; /* 设置正文字体大小 */
+}
+
+/* 新增的图片组容器和图片组样式 */
+.gif-box{
+    margin-bottom: 40px; /* 为每个组增加底部间距 */
+    text-align:left; /* 确保组文字居左 */
+}
+
+.gif-box p{
+    margin-left: 60px; /* 设置左边距 */
+    text-align: left; /* 设置左对齐 */
+    margin-bottom: 1rem; /* 添加下边距以与图片分开 */
+    font-size: 14px; /* 设置正文字体大小 */
+}
+
+.gif-group-container {
+    text-align: center; /* 确保组文字居中 */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 60px; /* 添加底部间距 */
+}
+
+/* 新增的图片组显示容器和图片组样式 */
+.gif-group-display {
+    width: auto;
+    margin-bottom: 40px; /* 为每个组增加底部间距 */
+    text-align: center; /* 确保组文字居中 */
+}
+.gif-group-display p {
+    text-align: center;
+    font-size: 14px; /* 设置正文字体大小 */
+}
+
+.gif-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* 确保图片在容器内水平居中 */
+    align-items: center;
+}
+
+.gif-item {
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.gif-item img {
+    width: 20vw;
+    margin-bottom: 0px;
+}
+
+.gif-item p{
+    text-align: center;
+    font-size: 14px; /* 设置正文字体大小 */
+}
+
+
+@media (max-width: 1200px) {
+    .gif-group-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gif-group {
+        justify-content: center;
+        margin-bottom: 0px;
+    }
+    .gif-group + .gif-group {
+        margin-top: 40px;
+    }
+    .gif-item img {
+        width: 30vw;
+        margin-bottom: 10px;
+    }
+}
+
+
+/* 新增的图片与描述容器样式 */
+.image-with-description-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 250px; /* 设置子容器之间的间距 */
+    margin: 20px 0;
+}
+
+.image-with-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+.image-with-description .text-part {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.image-with-description .image-part img {
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 800px) {
+    .image-with-description-container {
+        grid-template-columns: 1fr; /* 小屏幕时一行一个子容器 */
+    }
+}
+
+

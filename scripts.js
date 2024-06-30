@@ -76,32 +76,14 @@ document.addEventListener("DOMContentLoaded", function() {
         option.addEventListener('change', filterArtItems);
     });
 
-    // 点击 art-item 跳转并隐藏 .html
+    // 点击 art-item 跳转
     artItems.forEach(item => {
-        item.addEventListener('click', function(event) {
-            event.preventDefault();
+        item.addEventListener('click', function() {
             const link = item.getAttribute('data-link');
             if (link) {
-                fetch(link)
-                    .then(response => response.text())
-                    .then(html => {
-                        document.getElementById('main-content').innerHTML = html;
-                        const newPath = link.replace('.html', '');
-                        history.pushState(null, '', newPath);
-                    })
-                    .catch(err => console.warn('Something went wrong.', err));
+                window.location.href = link;
             }
         });
-    });
-
-    window.addEventListener('popstate', function() {
-        const path = location.pathname.split('/').pop() || 'index';
-        fetch(path + '.html')
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('main-content').innerHTML = html;
-            })
-            .catch(err => console.warn('Something went wrong.', err));
     });
 
     // 悬停显示和隐藏视频，并自动播放
@@ -124,5 +106,4 @@ document.addEventListener("DOMContentLoaded", function() {
         hoverVideo.style.display = 'none';
         iframe.src = videoSrc; // Reset the video source to stop the video
     });
-
 });

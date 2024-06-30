@@ -86,10 +86,7 @@ document.addEventListener("DOMContentLoaded", function() {
                     .then(response => response.text())
                     .then(html => {
                         document.getElementById('main-content').innerHTML = html;
-                        let newPath = link.replace('.html', '');
-                        if (newPath.endsWith('/index')) {
-                            newPath = newPath.replace('/index', '');
-                        }
+                        const newPath = link.replace('.html', '');
                         history.pushState(null, '', newPath);
                     })
                     .catch(err => console.warn('Something went wrong.', err));

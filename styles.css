@@ -1,5 +1,5 @@
 :root {
-    --main-padding: 60px; /* 使用屏幕宽度的2.5%作为内边距 */
+    --main-padding: 30px; /* 使用屏幕宽度的2.5%作为内边距 */
 }
 
 body {
@@ -83,19 +83,50 @@ main {
     margin-top: 3.5em; /* 添加 margin-top 以避免内容被导航栏遮挡 */
 }
 
-.bio, .filter {
+.filter {
     padding-left: 0;
     width: 75%;
 }
 
 /* 自我介绍字体大小改为40px */
 .bio {
-    padding-left: var(--main-padding);
-    margin-bottom: 2rem; /* 修正错误的 margin-bottom */
-    font-size: 30px;
-    margin-top: 0;
-    padding-top: 0; /* 确保 bio 没有 padding-top */
+  padding-left: var(--main-padding);
+  margin: 0;        /* 上下间距适中，自动居中 */
+  font-size: 16px;
+  line-height: 1.7;         /* 增加行距，提高可读性 */
+  max-width: 800px;         /* 限制宽度，阅读舒适 */
 }
+.bio h2 {
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.bio h3 {
+  font-size: 16px;
+  margin: 2rem 0 1rem;
+}
+.bio .timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 1rem;
+}
+.bio .timeline li {
+  display: grid;
+  grid-template-columns: 30px 1fr; /* 左列固定显示年份 */
+  gap: 1rem;
+}
+.bio .timeline .year {
+  font-weight: 600;
+  color: #444;
+  font-variant-numeric: tabular-nums; /* 数字等宽 */
+}
+.bio .timeline .event {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
 
 
 /* 下拉框样式更新为横向排开选项 */
@@ -191,7 +222,7 @@ main {
 
 .art-item h3 {
     font-size: 14px;
-    margin-top: 80px; /* 调整 margin-top */
+    margin-top: 30px; /* 调整 margin-top */
     margin-bottom: 0.5rem; /* 确保 margin-bottom 正确 */
     display: flex;
     justify-content: space-between; /* 将 h3 内的内容两端对齐 */

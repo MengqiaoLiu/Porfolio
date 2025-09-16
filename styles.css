@@ -444,7 +444,7 @@ header .logo h1 a:hover,
 }
 
 .gif-box p{
-    margin-left: 60px; /* 设置左边距 */
+    margin-left: 28px; /* 设置左边距 */
     text-align: left; /* 设置左对齐 */
     margin-bottom: 1rem; /* 添加下边距以与图片分开 */
     font-size: 14px; /* 设置正文字体大小 */

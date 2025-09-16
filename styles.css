@@ -356,6 +356,8 @@ footer a {
     font: 1rem;
 }
 
+
+
 .video-container {
     position: relative;
     width: 100%; /* 宽度为距离左右20px */
@@ -416,6 +418,15 @@ header .logo h1 a:hover,
     margin-left: 0; /* 设置左边距 */
     text-align: left; /* 设置左对齐 */
     margin-bottom: 2rem; /* 添加下边距以与图片分开 */
+}
+
+.media-description-middle {
+    padding: 0 var(--main-padding);
+    margin-left: 0; /* 设置左边距 */
+    text-align: left; /* 设置左对齐 */
+    width: 66.66vw;   /* 1/3 屏幕宽 */
+    font-size: 14px; 
+
 }
 
 .media-description h3 {

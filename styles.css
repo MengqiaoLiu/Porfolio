@@ -429,6 +429,17 @@ header .logo h1 a:hover,
 
 }
 
+@media (max-width: 800px) {
+    .media-description-middle {
+    padding: 0 var(--main-padding);
+    margin-left: 0; /* 设置左边距 */
+    text-align: left; /* 设置左对齐 */
+    width: 100%;
+    box-sizing: border-box;
+
+    }
+}
+
 .media-description h3 {
     font-size: 14px; /* 设置标题字体大小 */
 }

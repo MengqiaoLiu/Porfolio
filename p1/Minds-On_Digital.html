@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CDHC90MKDS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-CDHC90MKDS');
+  </script>
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PKSMWX8X');
+  </script>
+  <!-- End Google Tag Manager -->
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tilt Board – Head-Movement Interaction</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" type="image/png" href="../icon.png">
+</head>
+
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PKSMWX8X"
+            height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <header>
+    <div class="logo">
+      <h1><a href="../index.html"><span id="me">Me</span>ngqiao</a></h1>
+    </div>
+    <nav>
+      <ul>
+        <li class="info"><a href="../info.html">Info</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="project-navigation">
+      <h2>
+        <a href="../pX/prev-project.html" class="nav-arrow left-arrow"><i class="fas fa-arrow-left"></i></a>
+        Minds-On_Digital
+        <a href="../pY/next-project.html" class="nav-arrow right-arrow"><i class="fas fa-arrow-right"></i></a>
+      </h2>
+    </div>
+
+    <!-- Overview -->
+    <section class="project-content">
+      <div class="left-column">
+        <p>
+          An iterative exploration of <em>head-movement interaction</em>
+          (nodding & shaking) to control a tilting board and rolling ball.  
+          Starting from a physical prototype, I moved into
+          <strong>Unity</strong> for digital prototyping, and later integrated
+          <strong>TouchDesigner</strong> for smoother signals and exhibition-ready visuals.
+        </p>
+      </div>
+      <div class="right-column">
+        <p>Role: Creative Technologist / UX</p>
+        <p>Tech: Unity, TouchDesigner, MediaPipe</p>
+        <p>Focus: Natural Interaction, Embodied Control, Realtime Graphics</p>
+        <p>Year: 2025</p>
+      </div>
+    </section>
+
+    <section class="media-content">
+                  <div class="image-item">
+                      <img src="Minds-On_Digital.png" alt="Image 1">
+                 </div>
+                <!-- Add more images as needed -->
+        </section>
+
+    <!-- Physical Teaser -->
+    <section class="media-description-middle">
+      <h3>Physical Roots (Brief)</h3>
+      <p>
+        The project began as a tangible tilt-board with a rolling ball to validate the
+        <strong>embodied interaction</strong> concept. For full details, see the dedicated page:
+        <a href="../p1/Minds-On.png" target="_blank"><strong>Minds-On →</strong></a>
+      </p>
+    </section>
+  <section class="media-content">
+             <div class="image-gallery">
+                <div class="image-item">
+                    <img src="../cover/Minds-On.jpg" alt="Photo of the physical tilt-board prototype">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+        </section>
+
+    <!-- Unity-only -->
+    <section class="media-description-middle">
+      <h3><br><br>Unity Digital Prototype</h3>
+      <p>
+        I rebuilt the tilt-board in <strong>Unity</strong> to allow faster iteration and rule testing.  
+        Head <em>nodding</em> maps to forward/backward tilt, while <em>shaking</em> maps to left/right tilt.  
+        I implemented clamped angles and smoothing to keep motion stable and responsive.<br>
+      </p>
+    </section>
+    <section class="media-content">
+      <div class="image-gallery">
+     <div class="video-container">
+     <iframe src="https://www.youtube.com/embed/4g8HyKK_zLk?si=Gh5hq4MoJ3N_qHuA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+     </div>
+    </section>
+    <!-- MediaPipe -->
+    <section class="media-description-middle">
+      <p><strong><br><br>1) MediaPipe Face landmark detection</strong></p>
+      <p>
+        The MediaPipe Face Landmarker task lets user detect face landmarks and facial expressions in images and videos.
+        <a href="https://ai.google.dev/edge/mediapipe/solutions/vision/face_landmarker" target="_blank"><strong>More info →</strong></a>
+      </p>
+    </section>
+    <section class="media-content">
+             <div class="image-gallery">
+                <div class="image-item">
+                    <img src="../p1/face_landmark.png" alt="Photo of the physical tilt-board prototype">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+    </section>
+    <!-- MediaPipe + Unity -->
+    <section class="media-description-middle">
+      <p><strong>2) MediaPipe, Natively in Unity</strong></p>
+      <p>
+        Using MediaPipe inside Unity (create task → open camera → feed frames → run inference → visualize)
+      </p>
+    </section>
+    <section class="media-content">
+             <div class="image-gallery">
+                <div class="image-item">
+                    <img src="../p1/MediePipe-In-Unity.png" alt="Photo of the physical tilt-board prototype">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+    </section>
+    <!-- Calculation -->
+    <section class="media-description-middle">
+      <p><strong>3) Calculation: Nods & Shakes → Board Tilt</strong></p>
+      <p>
+      <strong>Direction:</strong> From landmarks — nose vs. vertical center gives forward/back (pitch sign); left ear vs. right ear z gives left/right (yaw sign).<br>
+      <strong>Angle:</strong> Normalize and gain these offsets to get a [-1,1] intensity, and smooth to produce the final tilt.
+      </p>
+    </section>
+    <section class="media-content">
+             <div class="image-gallery">
+                <div class="image-item">
+                    <img src="../p1/Calculation.png" alt="Photo of the physical tilt-board prototype">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+    </section>
+
+    <!-- Unity + TouchDesigner -->
+    <section class="media-description-middle">
+      <h3><br><br>Unity + TouchDesigner Hybrid</h3>
+      <p>
+        For richer visuals and smoother input, I integrated <strong>TouchDesigner</strong>.  
+        TD handles preprocessing and visualization; Unity focuses on physics and game logic.  
+        This modular pipeline is ideal for exhibitions and scalable to multi-user setups.
+      </p>
+    </section>
+    <section class="media-content">
+      <div class="image-gallery">
+     <div class="video-container">
+     <iframe src="https://www.youtube.com/embed/NWLmEvfoYfA?si=DIJwHYOad8V-kQ8m" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+     </div>
+     </div>
+    </section>
+    <!-- MediaPipe In TD -->
+    <section class="media-description-middle">
+      <p><strong><br><br>1) Workflow in TouchDesigner</strong></p>
+      <p>
+       Use a community-made MediaPipe component/plugin.
+      </p>
+    </section>
+    <section class="media-content">
+             <div class="image-gallery">
+                <div class="image-item">
+                    <img src="../p1/Workflow.png" alt="Photo of the physical tilt-board prototype">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+    </section>
+    <section class="media-description-middle">
+      <p><strong>2) Facial feature extraction</strong></p>
+      <p>
+       Read landmarks for nose tip, left/right eyes, ears; Compute Left/Right from the eyes’ vertical difference and Up/Down from the nose–ear vertical difference, normalize and smooth them.
+      </p>
+    </section>
+    <section class="media-content">
+             <div class="image-gallery">
+                <div class="image-item">
+                    <img src="../p1/Landmark.png" alt="Photo of the physical tilt-board prototype">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+    </section>
+    <section class="media-description-middle">
+      <p><strong>3) OSC</strong></p>
+      <p>
+       Stream the four directional intensities via OSC to Unity for tilt control.
+      </p>
+    </section>
+    <section class="media-content">
+             <div class="image-gallery">
+                <div class="image-item">
+                    <img src="../p1/OSC-Unity.png" alt="Photo of the physical tilt-board prototype">
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+    </section>
+
+
+
+<!-- Divider -->
+
+<section class="media-description-middle">
+  <h3><br><br>Comparison</h3>
+  <table class="comparison-table">
+    <tr><th>Phase</th><th>Strengths</th><th>Limitations</th></tr>
+
+    <tr>
+      <td>Physical Prototype</td>
+      <td>Intuitive, embodied; quick concept validation.</td>
+      <td>Slow iteration; setup constraints.</td>
+    </tr>
+
+    <tr>
+      <td>Unity-only</td>
+      <td>Fast prototyping; stable physics; single-app.</td>
+      <td>Less flexible input; visuals less show-ready.</td>
+    </tr>
+
+    <tr>
+      <td>Unity + TouchDesigner</td>
+      <td>Smoother input; live HUD; exhibition routing.</td>
+      <td>More complex; OSC/sync to maintain.</td>
+    </tr>
+  </table>
+</section>
+
+
+
+
+
+
+    <!-- Reflection -->
+    <section class="media-description-middle">
+      <h3><br><br>Reflection</h3>
+      <p>
+        This project illustrates my <strong>thinking process</strong>: from embodied prototype to digital simulation,
+        and finally to a cross-platform hybrid. Each phase was a deliberate step to test new possibilities
+        and push interaction design further.
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; Mengqiao Liu @2025</p>
+  </footer>
+
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+  <script defer src="../scripts.js"></script>
+</body>
+</html>

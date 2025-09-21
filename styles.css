@@ -612,3 +612,29 @@ header .logo h1 a:hover,
         height: auto; /* 让高度自动适应内容 */
     }
 }
+
+
+/* Divider*/
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.96rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px 14px;
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.comparison-table th {
+  text-align: left;
+  background: #f7f7f8;
+  font-weight: 600;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: #fcfcfc;
+}
+

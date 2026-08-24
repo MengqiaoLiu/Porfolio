@@ -68,7 +68,7 @@
         <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mengqiao Liu - Art Portfolio</title>
+    <title data-i18n-key="title-about">About - Mengqiao Liu</title>
     <link rel="stylesheet" href="styles.css">
     <script defer src="scripts.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -85,8 +85,11 @@
         </div>
         <nav>
             <ul>
-                
-                <li class="info"><a href="info.html">About</a></li>
+                <li class="language-switcher" role="group" aria-label="Language selection">
+                    <button type="button" data-language="en" aria-pressed="true">EN</button>
+                    <button type="button" data-language="zh" aria-pressed="false">中文</button>
+                </li>
+                <li class="info"><a href="info.html" data-i18n-key="nav-about">About</a></li>
             </ul>
         </nav>
     </header>
@@ -99,26 +102,46 @@
 
        <section class="project-content">
             <div class="left-column">
-                <p> Hi 👋 I’m Mengqiao Liu.</p>
-                <p>A designer and developer exploring how technology can enrich human experience and emotion.</p>
-                <p>I am currently pursuing a Master’s degree in New Media at Aalto University while interning at BMW. 
+                <p data-i18n-key="about-greeting">Hi 👋 I’m Mengqiao Liu.</p>
+                <p data-i18n-key="about-summary">A designer and developer exploring how technology can enrich human experience and emotion.</p>
+                <p data-i18n-key="about-study">I am currently pursuing a Master’s degree in New Media at Aalto University while interning at BMW. 
                     My portfolio reflects my explorations of the fusion between digital and physical, though some BMW projects remain confidential.</p>
-                <p><strong>Currently:</strong> Creative Technologist Intern @ BMW, Munich.</p>
+                <p data-i18n-key="about-current" data-i18n-html><strong>Currently:</strong> Creative Technologist Intern @ BMW, Munich.</p>
             </div>
             <div class="right-column">  
-            <p><strong>Exhibitions</strong></p>
-            <p>2025<br><strong>Waves of Digital Sculpture</strong> — Äänen Lumo, Helsinki, Finland</p>
-            <p>2024<br><strong>Ibero-American Design Biennial</strong> — Surface, Madrid, Spain</p>
+            <p data-i18n-key="about-exhibitions" data-i18n-html><strong>Exhibitions</strong></p>
+            <p data-i18n-key="about-exhibition-2025" data-i18n-html>2025<br><strong>Waves of Digital Sculpture</strong> — Äänen Lumo, Helsinki, Finland</p>
+            <p data-i18n-key="about-exhibition-2024" data-i18n-html>2024<br><strong>Ibero-American Design Biennial</strong> — Surface, Madrid, Spain</p>
             </div>
         </section>
         
-        <section class="artworks"> 
-            <div class="art-item" data-tags="interactive-art,self-work" data-link="p1/Minds-On_Digital.html" >
-                <img src="cover/Minds-On_Digital.png" alt="Minds-On: Digital">
+        <section class="artworks">  
+            <div class="art-item" data-tags="ux-ui,self-work,research" data-link="p5/Research-on-motions.html">
+                <img src="cover/Research on motions2.png" data-hover-src="p5/Cover.gif" alt="Research on motions">
                 <div class="overlay"></div>
                 <h3>
-                    <span class="left">Minds-On: Digital</span>
+                    <span class="left">Research on motions</span>
+                    <span class="right">2020</span>
+                </h3>
+                <p>#Research</p>
+                <p>#Motions</p>
+            </div>
+            <div class="art-item" data-tags="design-development,unity" data-nda-message-en="This project contains confidential core technical architecture and product details. Due to NDA restrictions, it cannot be publicly disclosed.&#10;&#10;If you are interested in the system architecture behind this project, please feel free to contact me." data-nda-message-zh="本项目包含未公开的核心技术架构与产品细节。由于NDA限制，不能对外展示。&#10;&#10;如果您对该项目的系统架构感兴趣，欢迎联系我。">
+                <img src="cover/BMW.png" alt="BMW HoverTouch">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">BMW HoverTouch</span>
                     <span class="right">2025</span>
+                </h3>
+                <p>#Design&amp;Development</p>
+                <p>#Unity</p>
+            </div>
+            <div class="art-item" data-tags="interactive-art,self-work" data-link="p8/Minds-On.html">
+                <img src="cover/Minds-On2.png" alt="Minds-On">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Minds-On</span>
+                    <span class="right">2023</span>
                 </h3>
                 <p>#Interactive Art</p>
                 <p>#Game & Spatial Perception</p>
@@ -143,49 +166,18 @@
                 <p>#Interactive Art</p>
                 <p>#Identity & data extraction</p>
             </div>
-            <div class="art-item" data-tags="interactive-art,self-work" data-link="p8/Minds-On.html">
-                <img src="cover/Minds-On.jpg" alt="Minds-On">
+            <div class="art-item" data-tags="interactive-art,self-work" data-link="p1/Minds-On_Digital.html" >
+                <img src="cover/Minds-On_Digital.png" alt="Minds-On: Digital">
                 <div class="overlay"></div>
                 <h3>
-                    <span class="left">Minds-On</span>
-                    <span class="right">2023</span>
+                    <span class="left">Minds-On: Digital</span>
+                    <span class="right">2025</span>
                 </h3>
                 <p>#Interactive Art</p>
                 <p>#Game & Spatial Perception</p>
             </div>
-                        <div class="art-item" data-tags="ux-ui,business" data-link="p7/Kwai-recruitment-business-payment-function.html">
-                <img src="cover/Payment function of Kwai Job Board.jpg" alt="You might like...">
-                <div class="overlay"></div>
-                <h3>
-                    <span class="left">Kwai recruitment business payment function</span>
-                    <span class="right">2023</span>
-                </h3>
-                <p>#UX</p>
-                <p>#App & Web & Software</p>
-            </div>   
-
-            <div class="art-item" data-tags="ux-ui,business" data-link="p6/Kwai-Spring-Festival-blind-date.html">
-                <img src="cover/Kwai Spring Festival blind date2.jpg" alt="You might like...">
-                <div class="overlay"></div>
-                <h3>
-                    <span class="left">Kwai Spring Festival blind date</span>
-                    <span class="right">2022</span>
-                </h3>
-                <p>#UX</p>
-                <p>#App</p>
-            </div>
-            <div class="art-item" data-tags="ux-ui,self-work,research" data-link="p5/Research-on-motions.html">
-                <img src="cover/Research on motions.jpg" alt="You might like...">
-                <div class="overlay"></div>
-                <h3>
-                    <span class="left">Research on motions</span>
-                    <span class="right">2020</span>
-                </h3>
-                <p>#Research</p>
-                <p>#Motions</p>
-            </div>
             <div class="art-item" data-tags="interactive-art,self-work" data-link="p4/Behind-the-Mirror.html">
-                <img src="cover/Behind the Mirror.jpg" alt="You might like...">
+                <img src="cover/Behind the Mirror.jpg" alt="Behind the Mirror">
                 <div class="overlay"></div>
                 <h3>
                     <span class="left">Behind the Mirror</span>
@@ -194,12 +186,36 @@
                 <p>#Interactive Art</p>
                 <p>#Social Dilemma & Three-Way Handshake</p>
             </div>
-            
+            <div class="art-item" data-tags="ux-ui,business" data-link="p7/Kwai-recruitment-business-payment-function.html">
+                <img src="cover/Payment function of Kwai Job Board.jpg" alt="Payment function of Kwai Job Board">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Kwai recruitment business payment function</span>
+                    <span class="right">2023</span>
+                </h3>
+                <p>#UX</p>
+                <p>#App & Web & Software</p>
+            </div>   
+            <div class="art-item" data-tags="ux-ui,business" data-link="p6/Kwai-Spring-Festival-blind-date.html" hidden>
+                <img src="cover/Kwai Spring Festival blind date2.jpg" alt="Kwai Spring Festival blind date2">
+                <div class="overlay"></div>
+                <h3>
+                    <span class="left">Kwai Spring Festival blind date</span>
+                    <span class="right">2022</span>
+                </h3>
+                <p>#UX</p>
+                <p>#App</p>
+            </div>
             <!-- Add more artwork items here as needed -->
         </section>
     </main>
-    <script defer src="scripts.js"></script>
 
+    <dialog class="nda-dialog" id="nda-dialog" aria-labelledby="nda-dialog-title" aria-describedby="nda-dialog-message">
+        <form method="dialog">
+            <h2 id="nda-dialog-title">BMW HoverTouch</h2>
+            <p id="nda-dialog-message">This project contains confidential core technical architecture and product details. Due to NDA restrictions, it cannot be publicly disclosed.<br><br>If you are interested in the system architecture behind this project, please feel free to contact me.</p>
+            <button type="submit" value="close" data-i18n-key="action-close">Close</button>
+        </form>
+    </dialog>
 </body>
 </html>
-
